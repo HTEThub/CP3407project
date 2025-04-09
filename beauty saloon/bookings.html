@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book Your Beauty Appointment</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <!-- Header Section -->
+        <header>
+            <a href="index.html"><img src="images/beauty-salon-services.png" alt="Beauty on the go logo"></a>
+        </header>
+
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <!-- Tablet/Desktop Navigation -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a> </li> <!-- Link to homepage -->
+                <li><a href="about.html">About Us</a> </li>
+                <li><a href="services.html">Services</a> </li>
+                <li><a href="bookings.html">Bookings</a> </li>
+                <li><a href="contact.html">Contact Us</a> </li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <!-- <div id="hero" class="tablet-desktop">
+            <img src="images/hero-image.jpg" alt="Beautiful salon environment">
+        </div> -->
+
+        <!-- Main Content -->
+        <main>
+            <div class="mobile">
+                <h2>Book Your Beauty Service</h2>
+                <p>It's easy to book your beauty service with us. Just choose a salon, service, time, and fill out your details.</p>
+                
+                <!-- Service Selection Form -->
+                <div id="booking-form">
+                    <h3>Select Salon</h3>
+                    <form>
+                        <label for="salon">Choose a Salon:</label>
+                        <select id="salon" name="salon">
+                            <option value="salon1">Salon 1 - Downtown</option>
+                            <option value="salon2">Salon 2 - Uptown</option>
+                            <option value="salon3">Salon 3 - Beachside</option>
+                            <option value="salon4">Salon 4 - Suburbs</option>
+                        </select>
+                        
+                        <label for="services">Choose a Service:</label>
+                        <select id="services" name="services">
+                            <option value="makeup">Makeup</option>
+                            <option value="nails">Nails</option>
+                            <option value="hair">Hair</option>
+                            <option value="facials">Facials</option>
+                        </select>
+                        
+                        <label for="date">Select Date:</label>
+                        <input type="date" id="date" name="date">
+
+                        <label for="time">Select Time:</label>
+                        <input type="time" id="time" name="time">
+
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+
+                        <label for="contact">Contact Number:</label>
+                        <input type="tel" id="contact" name="contact" placeholder="Your Contact Number">
+
+                        <button type="submit" class="btn-book-now">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Desktop Version of the Form -->
+            <div id="booking-form" class="tablet-desktop">
+                <!-- <h2>Book Your Beauty Service</h2>
+                <p>Choose your desired beauty service, select a date and time, and confirm your appointment details below.</p>
+
+                <form>
+                    <label for="salon">Choose a Salon:</label>
+                    <select id="salon" name="salon">
+                        <option value="salon1">Salon 1 - Downtown</option>
+                        <option value="salon2">Salon 2 - Uptown</option>
+                        <option value="salon3">Salon 3 - Beachside</option>
+                        <option value="salon4">Salon 4 - Suburbs</option>
+                    </select>
+
+                    <label for="services">Choose a Service:</label>
+                    <select id="services" name="services">
+                        <option value="makeup">Makeup</option>
+                        <option value="nails">Nails</option>
+                        <option value="hair">Hair</option>
+                        <option value="facials">Facials</option>
+                    </select>
+                    
+                    <label for="date">Select Date:</label>
+                    <input type="date" id="date" name="date">
+
+                    <label for="time">Select Time:</label>
+                    <input type="time" id="time" name="time">
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name">
+
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Your Contact Number">
+
+                    <button type="submit" class="btn-book-now">Confirm Booking</button>
+                </form> -->
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer>
+            <br>
+            <p>&copy; Copyright 2022. All Rights Reserved.</p>
+            <p>
+                <a href="mailto:forwardfirst@club.net">
+                    forwardfirst@club.net
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- End container -->
+    <script src="script.js"></script>
+</body>
+
+</html>
