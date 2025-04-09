@@ -18,12 +18,12 @@ In progress:
 
 Completed:
 * Task-3 (developer name or initials), date completed
-* ...
+* ...long
 
 ### Burn Down for iteration-1 (see chapter 4):
 Update this at least once per week
 * 4 weeks left, xx days of estimated amount of work 
 * 2 weeks left, xx days
 * 1 weeks left, xx days
-* 0 weeks left, xx days
+* 0 weeks left, xx days 
 * Actual Velocity: ?? 
