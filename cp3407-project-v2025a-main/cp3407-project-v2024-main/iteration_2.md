@@ -4,26 +4,47 @@ Checklist:
 1. github entry timestamps
 2. User stories are correct: see p39
 
-* Assumed Velocity FROM iteration-1: ?? 
-* Number of developers: ??
-* Total estimated amount of work: YY days
+* Assumed Velocity FROM iteration-1: 1.33 story points/day 
+* Number of developers: 5
+* Total estimated amount of work: 20 days
 
 User stories or tasks (see chapter 4):
-1. [user story or task title](./user_stories/user_story_01_title.md), priority XX, YY days 
-2. ...
+1. [user story or task title](https://trello.com/b/AJ2FSEC5/cp3407project), priority XX, YY days 
+2.
+Backend Development, Priority: High, 4 days
+
+PHP Integration, Priority: High, 3 days
+
+Two Types of User Dashboard (Customer & Salon), Priority: Medium, 4 days
+
+Database Setup & Integration, Priority: High, 4 days
+
+Cloud Deployment, Priority: Medium, 3 days
+
 
 In progress:
-* Task-2 (developer name or initials), date started
-* ...
+Task-2 (developer name or initials), date started
+* PHP Integration (Htet Myat), date started – 2025-04-07
+
+* Two Types of User Dashboard (Melvin,Htet Myat) (CD), date started – 2025-04-08
 
 Completed:
-* Task-3 (developer name or initials), date completed
-* ...
+Task-3 (developer name or initials), date completed
+* Backend Development (Htet Myat), date completed – 2025-04-09
+
+* Database Integration (Htet Myat,Drashya), date completed – 2025-04-10
+
+* Cloud Setup & Deployment (Htet Myat,Drashya), date completed – 2025-04-10
 
 ### Burn Down for iteration-2 (see chapter 4):
 Update this at least once per week
-* 4 weeks left, xx days of estimated amount of work 
-* 2 weeks left, xx days
-* 1 weeks left, xx days
-* 0 weeks left, xx days
-* Actual Velocity: ?? 
+* 4 weeks left, 18 days of estimated amount of work
+
+* 2 weeks left, 10 days
+
+* 1 week left, 5 days
+
+* 0 weeks left, 0 days
+
+Actual Velocity: 18 days / 4 weeks = 4.5 days/week
+
