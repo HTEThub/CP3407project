@@ -13,11 +13,7 @@ User stories or tasks (see chapter 4):
 2. 
 User Authentication Setup – Priority: High, 3 days
 
-Home Page UI Design – Priority: Medium, 2 days
-
-Booking System Backend – Priority: High, 5 days
-
-Database Schema Design – Priority: High, 4 days
+Home Page UI Design – Priority: Medium, 5 days
 
 Service Listings Page – Priority: Medium, 3 days
 
