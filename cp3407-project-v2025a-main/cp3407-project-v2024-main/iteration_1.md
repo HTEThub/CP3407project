@@ -4,26 +4,47 @@ Checklist:
 1. github entry timestamps
 2. User stories are correct: see p39
 
-* Assumed Velocity: ?? 
-* Number of developers: ??
-* Total estimated amount of work: YY days
+* Assumed Velocity: 2 days per developer 
+* Number of developers: 5
+* Total estimated amount of work: 20 days
 
 User stories or tasks (see chapter 4):
-1. [user story or task title](./user_stories/user_story_01_title.md), priority XX, YY days 
-2. ...
+1. [user story or task title](https://trello.com/b/AJ2FSEC5/cp3407project), priority XX, YY days 
+2. 
+User Authentication Setup – Priority: High, 3 days
+
+Home Page UI Design – Priority: Medium, 2 days
+
+Booking System Backend – Priority: High, 5 days
+
+Database Schema Design – Priority: High, 4 days
+
+Service Listings Page – Priority: Medium, 3 days
+
+Testing and Debugging (Frontend) – Priority: Low, 3 days
 
 In progress:
-* Task-2 (developer name or initials), date started
-* ...
+Task-2 
+* Main website design– (Nafisa), date started: 01 March
+
+* Adding logo, designing the website  (Prima,Melvin), date started: 07 March
 
 Completed:
-* Task-3 (developer name or initials), date completed
-* ...
+Task-3 
+* Website Design Modification – (Prima ,melvin), date completed: 30 March
+
+* User Authentication Setup – (Melvin), date completed: 2 April
 
 ### Burn Down for iteration-1 (see chapter 4):
 Update this at least once per week
-* 4 weeks left, xx days of estimated amount of work 
-* 2 weeks left, xx days
-* 1 weeks left, xx days
-* 0 weeks left, xx days
-* Actual Velocity: ?? 
+* 4 weeks left: 20 days of estimated work
+
+2 weeks left: 10 days
+
+1 week left: 5 days
+
+0 weeks left: 0 days
+
+
+* Actual Velocity: Total completed work / total iteration days = 20 days / 15 working days = ~1.33 story points per day
+
