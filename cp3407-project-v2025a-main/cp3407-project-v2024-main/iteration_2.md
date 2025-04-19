@@ -1,8 +1,8 @@
 # Actual iteration-2 board, (see chapters 3 and 4), add your start and end dates 
 
 Checklist: 
-1. start : 15/02/25
-   end: 
+1. start : 19/02/25
+   end: 16/04/25
 2. User stories are correct: see p39
 
 * Assumed Velocity FROM iteration-1: 1.33 story points/day 

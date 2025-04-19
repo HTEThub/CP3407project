@@ -1,8 +1,8 @@
 # Actual iteration-1 board, (see chapters 3 and 4), add your start and end dates 
 
 Checklist: 
-1. start : 10/02/25
-2. end:
+1. start : 26/02/25
+2. end: 19/03/25
 
 * Assumed Velocity: 2 days per developer 
 * Number of developers: 5
