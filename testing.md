@@ -16,10 +16,10 @@ This document explains the testing strategy used in the GlamUp online beauty boo
 
 ## Test Strategy
 
-- ✅ Unit tested all logic-heavy PHP pages
-- ✅ Simulated POST, GET, FILES, SESSION
-- ✅ Validated security (passwords, XSS, sessions)
-- ✅ Checked UI messages and redirect behavior
+- Unit tested all logic-heavy PHP pages
+- Simulated POST, GET, FILES, SESSION
+- Validated security (passwords, XSS, sessions)
+- Checked UI messages and redirect behavior
 
 ## Tools
 
