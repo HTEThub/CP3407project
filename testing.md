@@ -1,8 +1,8 @@
-# 📦 GlamUp Project – Testing Overview
+# GlamUp Project – Testing Overview
 
 This document explains the testing strategy used in the GlamUp online beauty booking system.
 
-## ✅ What We Tested
+## What We Tested
 
 | Component        | Test File           | Description |
 |------------------|---------------------|-------------|
@@ -14,21 +14,21 @@ This document explains the testing strategy used in the GlamUp online beauty boo
 | Artist Bookings  | tests/BookingListTest.php | Tests artist-only view, status updates |
 | Edit Profile     | tests/EditProfileTest.php | Tests data update, optional password, email conflict |
 
-## 🧪 Test Strategy
+## Test Strategy
 
 - ✅ Unit tested all logic-heavy PHP pages
 - ✅ Simulated POST, GET, FILES, SESSION
 - ✅ Validated security (passwords, XSS, sessions)
 - ✅ Checked UI messages and redirect behavior
 
-## 🧰 Tools
+## Tools
 
 - **PHPUnit 12.1.2**
 - **PHP 8.4.6**
 - Manual testing via browser
 - XAMPP local server
 
-## ✅ Outcome
+## Outcome
 
 - 22 tests covering all business logic
 - 39 assertions total
