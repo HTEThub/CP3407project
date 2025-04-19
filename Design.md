@@ -66,7 +66,7 @@ We created UI wireframes using drawings to plan the layout and flow.
 - Separate Booking Pages depending on login type (Customer = Booking, Artist = Booking List)
 - Intuitive navigation and quick access to actions
 
-📎 [Interface Mockups (link to image or NinjaMock export)]
+Here is some of the drawn designs
 ![20250419_224305](https://github.com/user-attachments/assets/0b1770e6-4016-485c-959a-b259990ff5e7)
 
 ![20250419_224320](https://github.com/user-attachments/assets/347cfbeb-8429-4a81-918b-0b25c4953210)
