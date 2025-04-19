@@ -11,7 +11,7 @@ We implemented a lightweight MVC-style structure using PHP to maintain separatio
 
 - **Frontend:** HTML and CSS (Bootstrap framework used for responsiveness and consistency)
 - **Backend:** PHP handles routing, form processing, and business logic
-- **Database:** MySQL is used to store users, bookings, services, and other core data
+- **Database:** MySQL is used to store users and bookings
 - **Hosting:** All components are hosted on [InfinityFree](https://infinityfree.net), which provides:
   - PHP web server
   - MySQL database hosting
@@ -19,7 +19,7 @@ We implemented a lightweight MVC-style structure using PHP to maintain separatio
 
 ## 📦 UML Diagram
 
-The following UML diagram represents the high-level architecture of the GlamUp system, illustrating how components interact:
+The following UML diagram, made in [draw.io](https://app.diagrams.net/),represents the high-level architecture of the GlamUp system, illustrating how components interact:
 ![Architecture_UML drawio](https://github.com/user-attachments/assets/68302055-fbd2-4f54-b6b3-f643649c9fbe)
 
 
@@ -27,7 +27,7 @@ The following UML diagram represents the high-level architecture of the GlamUp s
 
 ## Database Design
 
-We used **phpMyAdmin on InfinityFree** to create and manage our MySQL database. The database includes the following main tables:
+We used **[phpMyAdmin](https://www.phpmyadmin.net/)** provided by **InfinityFree** to create and manage our MySQL database. The database includes the following main tables:
 
 | Table Name   | Description                                                    |
 |--------------|----------------------------------------------------------------|
