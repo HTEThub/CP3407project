@@ -1,15 +1,15 @@
 # Actual iteration-1 board, (see chapters 3 and 4), add your start and end dates 
 
 Checklist: 
-1. github entry timestamps
-2. User stories are correct: see p39
+1. start : 10/02/25
+2. end:
 
 * Assumed Velocity: 2 days per developer 
 * Number of developers: 5
 * Total estimated amount of work: 20 days
 
-User stories or tasks (see chapter 4):
-1. [user story or task title](https://trello.com/b/AJ2FSEC5/cp3407project), priority XX, YY days 
+## User stories or tasks (see chapter 4):
+1. [user story or task title](https://trello.com/b/AJ2FSEC5/cp3407project) 
 2. 
 User Authentication Setup – Priority: High, 3 days
 
@@ -19,13 +19,13 @@ Service Listings Page – Priority: Medium, 3 days
 
 Testing and Debugging (Frontend) – Priority: Low, 3 days
 
-In progress:
+## In progress:
 Task-2 
 * Main website design– (Nafisa), date started: 01 March
 
 * Adding logo, designing the website  (Prima,Melvin), date started: 07 March
 
-Completed:
+## Completed:
 Task-3 
 * Website Design Modification – (Prima ,melvin), date completed: 30 March
 
