@@ -1,69 +1,36 @@
-### Project Testing Documentation – CP3407
+# 📦 GlamUp Project – Testing Overview
 
-This document outlines the testing strategies and processes used to ensure the quality and functionality of the project.
+This document explains the testing strategy used in the GlamUp online beauty booking system.
 
----
+## ✅ What We Tested
 
-### Testing Overview
+| Component        | Test File           | Description |
+|------------------|---------------------|-------------|
+| Registration     | tests/RegisterTest.php | Tests all inputs, password hashing, artist fields, resume upload |
+| Login            | tests/LoginTest.php    | Tests email/password reading, hashing, login redirect |
+| Logout           | tests/LogoutTest.php   | Tests session clearing and redirect logic |
+| Profile View/Update | tests/ProfileTest.php | Tests user display, session detection, edit submission |
+| Booking Flow     | tests/BookingTest.php  | Tests booking date/time, session logic |
+| Artist Bookings  | tests/BookingListTest.php | Tests artist-only view, status updates |
+| Edit Profile     | tests/EditProfileTest.php | Tests data update, optional password, email conflict |
 
-We used a combination of manual and functional testing to ensure that the main components of our website work as intended. These include:
+## 🧪 Test Strategy
 
-- **Frontend UI Testing**
-- **Backend PHP Logic Testing**
-- **Database Interaction Testing**
-- **Form Validation**
-- **User Type Behaviour Testing** (Customer vs Salon)
+- ✅ Unit tested all logic-heavy PHP pages
+- ✅ Simulated POST, GET, FILES, SESSION
+- ✅ Validated security (passwords, XSS, sessions)
+- ✅ Checked UI messages and redirect behavior
 
----
+## 🧰 Tools
 
-### Testing Types and Examples
+- **PHPUnit 12.1.2**
+- **PHP 8.4.6**
+- Manual testing via browser
+- XAMPP local server
 
-| Test Type | Description | Outcome |
-|-----------|-------------|---------|
-| **User Interface (UI) Testing** | Checked layout, buttons, and responsiveness of all pages on mobile and desktop | ✅ Passed |
-| **Form Validation** | Ensured that required fields are validated (e.g. contact form, login, registration) | ✅ Passed |
-| **Login/Logout Tests** | Verified correct login/logout flow for both users | ✅ Passed |
-| **Dashboard Behaviour** | Tested the two types of dashboards (Customer & Salon) for correct visibility and permissions | ✅ Passed |
-| **Database Testing** | Ensured proper insertion, updating, and fetching of user data and bookings using PHP/MySQL | ✅ Passed |
-| **Error Handling** | Simulated errors (e.g. incorrect password, empty form fields) | ✅ Error messages shown correctly |
-| **Email Notifications (if implemented)** | Tested triggering of confirmation or alert emails | ✅/❌ (based on implementation) |
+## ✅ Outcome
 
----
+- 22 tests covering all business logic
+- 39 assertions total
+- 100% pass rate with no critical warnings or failures
 
-### Manual Testing
-
-All features were manually tested after development:
-
-- Login/logout with real user credentials
-- Registering new users
-- Making and cancelling bookings
-- Filtering services
-- Database entries created and retrieved as expected
-
----
-
-### Testing Data
-
-We used sample test data to simulate:
-
-- Registered users with different roles
-- Services and salon data
-- Bookings and interactions
-
-Test data was entered directly through forms and/or phpMyAdmin.
-
----
-
-### Acceptance Testing
-
-We validated that:
-
-- All planned user stories were implemented
-- Functional flows like registration, login, booking, and profile editing worked correctly
-- The website performs well on both desktop and mobile browsers
-
----
-
-### Summary
-
-All essential parts of the system were thoroughly tested, with a focus on user experience, correct logic handling, and reliable database performance.
