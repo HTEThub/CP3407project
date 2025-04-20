@@ -20,6 +20,7 @@ We implemented a lightweight MVC-style structure using PHP to maintain separatio
 ## 📦 UML Diagram
 
 The following UML diagram, made in [draw.io](https://app.diagrams.net/),represents the high-level architecture of the GlamUp system, illustrating how components interact:
+
 ![Architecture_UML drawio](https://github.com/user-attachments/assets/68302055-fbd2-4f54-b6b3-f643649c9fbe)
 
 
