@@ -28,9 +28,11 @@ This document outlines all the development tools and technologies used in this p
 | Tool | Purpose | Why We Chose It |
 |------|---------|------------------|
 | **InfinityFree** | Free website hosting | Supports PHP and MySQL, no cost, good for student projects |
+| **Free SSL (via InfinityFree)** | Secure HTTPS connection | Enables secure data transfer with automatic SSL installation and DNS verification |
 
 ---
 
 ### Summary
 
-We selected tools that were simple, beginner-friendly, and effective for our group project. This combination allowed us to collaborate efficiently, track progress, and deliver a working product hosted online.
+We selected tools that were simple, beginner-friendly, and effective for our group project. This combination allowed us to collaborate efficiently, track progress, and deliver a working product hosted online with secure HTTPS encryption.
+
