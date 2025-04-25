@@ -1,0 +1,32 @@
+# User story title: Sign up as a customer
+
+Keep any other version here as well, e.g. Create account for service booking.
+
+## Priority: 1
+High priority for iteration-1. Needed to allow customer participation.
+
+## Estimation: 2 days
+* Bob: 2 days
+* Lisa: 1.5 days
+* Jack: 2 days
+
+## Assumptions:
+* Users will provide email, password, phone number, address, and payment info.
+* Users are not applying as artists.
+
+## Description:
+Description-v1: As a customer, I want to create an account by providing my personal details and payment information, so I can use the services offered.
+
+## Tasks:
+1. Create a registration form for customers, Estimation: 0.5 days
+2. Add input validation for form fields, Estimation: 0.5 days
+3. Save customer info to database, Estimation: 1 day
+4. Display success message and redirect, Estimation: 0.5 day
+
+# UI Design:
+* Placeholder: Insert design mockup using [https://ninjamock.com/](https://ninjamock.com/) or other prototyping tool.
+
+# Completed:
+* Placeholder: Insert screenshots of completed registration form for customers.
+* Show changes made after user testing if any.
+
