@@ -51,3 +51,6 @@
 * 0 weeks left, 0 days
 
 * **Actual Velocity:** ~2.5 days per developer per week
+
+![iteration_1_BurndownChart](20250425_150958.jpg)
+
