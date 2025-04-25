@@ -1,4 +1,4 @@
-![20250425_150958](https://github.com/user-attachments/assets/4a2b9bf2-50bf-49e1-bed3-8e6553cda89e)![20250425_150958](https://github.com/user-attachments/assets/990b4bf6-5218-4823-a67f-0d639e740b0c)# Actual iteration-1 board, (see chapters 3 and 4), add your start and end dates
+# Actual iteration-1 board, (see chapters 3 and 4), add your start and end dates
 
 **Start Date:** Week 2  
 **End Date:** Week 5
