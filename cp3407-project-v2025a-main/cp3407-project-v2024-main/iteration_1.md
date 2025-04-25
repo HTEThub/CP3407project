@@ -28,21 +28,26 @@
 ---
 
 ### In progress:
-* Task-2 (Drashya), started Week 2
-* Task-3 (Htet Myet), started Week 2
+(no tasks left)
 
 ---
 
 ### Completed:
+* Task-4 (Melvin), completed Week 2
 * Task-1 (Nafisa), completed Week 3
-* Task-4 (Melvin), completed Week 3
+* Task-2 (Drashya), completed Week 3
+* Task-3 (Melvin), completed Week 4
+* Task-5 (Htet Myet), completed Week 5
+* Task-6 (Prima), completed Week 5
+
 
 ---
 
 ### Burn Down for iteration-1 (see chapter 4):
 * 4 weeks left, 10 days of estimated amount of work
-* 2 weeks left, 6.5 days
-* 1 week left, 3 days
+* 3 weeks left, 9 days
+* 2 weeks left, 4.5 days
+* 1 week left, 3.5 days
 * 0 weeks left, 0 days
 
 * **Actual Velocity:** ~2.5 days per developer per week
