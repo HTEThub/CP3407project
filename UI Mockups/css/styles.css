@@ -1,0 +1,742 @@
+/*
+Author: Nafisa Sadaf Toushi
+Date: 22/11/2023
+File Name: styles.css
+*/
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul /* Reset CSS to avoid browser inconsistencies */
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Basic Layout */
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #ecc2c2;
+    color: #6f1b1b;
+    line-height: 1.6;
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Logo */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Mobile Nav Styles */
+.mobile-nav {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: block;
+        text-align: right;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    #menu-links {
+        display: none;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    #menu-links a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding: 10px 0;
+    }
+
+    #menu-links a:hover {
+        background-color: #f1c40f;
+    }
+}
+
+#container header a {
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    padding: 40px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Francois One', sans-serif;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 16px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #e0b00f;
+}
+
+/* Contact Form */
+#form {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #f1c40f;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e0b00f;
+}
+
+/* Map Section */
+#location {
+    margin-top: 40px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f1c40f;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .tablet-desktop {
+        display: none;
+    }
+
+    #menu-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #menu-links a {
+        display: block;
+        padding: 15px 0;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #menu-links a:hover {
+        background-color: #f1c40f;
+    }
+}
+
+/* Flexbox Layout for Service Items */
+#services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    flex: 1 1 calc(25% - 20px);
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 100%;
+    }
+}
+.service img {
+    width: 150px; /* Adjust image size */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.service img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.service {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.service-content {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.service img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.service-text {
+    flex: 1;
+}
+
+.service h3 {
+    margin: 0;
+    color: #7d3b3b;
+}
+
+.service p {
+    margin: 5px 0 0;
+}
+
+/* Align services properly */
+.service-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    width: 120px; /* Set image size */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.service p {
+    flex: 1;
+    font-size: 16px;
+    color: #6f1b1b;
+}
+
+
+
+/* Simple Reset (Optional) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body (Optional - adjust to match your design) */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FDEDEE; /* Light pinkish background */
+    color: #333;
+  }
+  
+  /* Services Section */
+  .services-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .services-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #B6525C;
+  }
+  
+  /* Services Container */
+  .services-container {
+    display: flex;               /* Or use display: grid; */
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual Service Card */
+  .service-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 350px;
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #B6525C;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .services-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .service-card {
+      max-width: 90%;
+    }
+  }
+
+
+  /* Registration Section Styles */
+#register-section {
+    padding: 2rem;
+    background-color: #fff;
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #register-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  #register-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  #register-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  #register-form input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #register-form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #B6525C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #register-form button:hover {
+    background-color: #a24651;
+  }
+  /* Styles for the index page login button */
+.login-btn {
+    background-color: #B6525C;  /* Your preferred color */
+    color: #fff;               /* White text */
+    border: none;              /* Remove default border */
+    padding: 0.75rem 1.5rem;   /* Spacing around the text */
+    border-radius: 4px;        /* Slightly rounded corners */
+    font-size: 1rem;           /* Adjust text size */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .login-btn:hover {
+    background-color: #a24651; /* Slightly darker shade on hover */
+  }
+  
+
+  /*login*/
+
+  /* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto Slab', serif;
+  background: linear-gradient(135deg, #fdecee, #ffc0cb);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Center the login box on the page */
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Box Styling */
+.login-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.login-box h2 {
+  margin-bottom: 1.5rem;
+  font-family: 'Francois One', sans-serif;
+  color: #B6525C;
+}
+
+/* Form Groups */
+.form-group {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #B6525C;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+.login-button:hover {
+  background-color: #a24651;
+}
+
+/* Account Message */
+.account-message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+.account-message a {
+  color: #B6525C;
+  text-decoration: none;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+  /* Example of your body styling */
+body {
+    background-color: #fdecee; /* Light pink background */
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header Image Container */
+  .header-image-container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .header-image {
+    width: 180px;  /* Adjust as needed */
+    height: auto;
+    border-radius: 8px; /* optional */
+  }
+  
+  /* The white “box” container */
+  .register-card {
+    background-color: #fff;
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .register-card h2 {
+    margin-bottom: 1.5rem;
+    font-family: 'Francois One', sans-serif;
+    color: #B6525C; /* heading color */
+  }
+  
+  /* Form groups */
+  .form-group {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Button (used for both Register & Login) */
+  .register-button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #B6525C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  .register-button:hover {
+    background-color: #a24651;
+  }
+  
+  /* Link / Additional text below the form */
+  .account-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  .account-message a {
+    color: #B6525C;
+    text-decoration: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  

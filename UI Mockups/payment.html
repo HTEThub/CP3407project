@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment - Beauty On The Go</title>
+  <!-- Link to your main stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google Fonts (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="container">
+    <!-- Header -->
+    <header>
+      <a href="index.html">
+        <img src="images/beauty-salon-services.png" alt="Beauty on the go logo" height="220" width="297">
+      </a>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="mobile-nav">
+      <div id="menu-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+    </nav>
+
+    <!-- Payment Section -->
+    <section id="payment-section">
+      <h2>Confirm Booking & Make a Payment</h2>
+      <form id="payment-form" action="process_payment.php" method="POST">
+        <!-- Display booking summary or confirmation details if needed -->
+        <div class="booking-summary">
+          <p>Please confirm your booking details and complete the payment below.</p>
+          <!-- You can dynamically populate booking details if integrating with a back-end -->
+        </div>
+
+        <div class="form-group">
+          <label for="cardName">Name on Card:</label>
+          <input type="text" id="cardName" name="cardName" placeholder="Full name as on card" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cardNumber">Card Number:</label>
+          <input type="text" id="cardNumber" name="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+          </div>
+          <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="3 or 4 digit code" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="billingAddress">Billing Address:</label>
+          <textarea id="billingAddress" name="billingAddress" rows="3" placeholder="Street, City, State, ZIP" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="amount">Payment Amount:</label>
+          <input type="number" step="0.01" id="amount" name="amount" placeholder="Enter amount" required>
+        </div>
+
+        <button type="submit" class="payment-btn">Pay Now</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Beauty On The Go</p>
+    </footer>
+  </div>
+</body>
+</html>

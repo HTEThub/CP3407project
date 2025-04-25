@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Beauty On The Go - Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <!-- Use header for website logo/name -->
+        <header>
+            <a href="index.html"><img src="images/beauty-salon-services.png" alt="Beauty on the go logo" height="220" width="297"></a>
+        </header>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="bookings.html">Bookings</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="login.html">Login</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <!-- Tablet, Desktop, Nav -->
+        <nav class="tablet-desktop">
+            <ul>
+                <li><a href="index.html">Home</a> </li> <!-- Link to homepage -->
+                <li><a href="about.html">About Us</a> </li>
+                <li><a href="services.html">Services</a> </li>
+                <li><a href="bookings.html">Bookings</a> </li>
+                <li><a href="contact.html">Contact Us</a> </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="mobile">
+                <h1>Welcome to Beauty On The Go</h1>
+                <p>Your personal beauty service provider. We bring the salon to you! Whether you need makeup, hair, or nails done, we have you covered—anytime, anywhere.</p>
+                <a href="services.html" class="action">Explore Our Services</a>
+
+                <!-- Quick Navigation Buttons -->
+                <div class="quick-nav">
+                    <a href="services.html" class="quick-btn">Our Services</a>
+                    <a href="bookings.html" class="quick-btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="tablet-desktop">
+                <!-- <h1>Welcome to Beauty On The Go</h1>
+                <p>Your personal beauty service provider. We bring the salon to you! Whether you need makeup, hair, or nails done, we have you covered—anytime, anywhere.</p>
+                <a href="services.html" class="action">Explore Our Services</a> -->
+
+                <!-- Quick Navigation Buttons -->
+                <!-- <div class="quick-nav">
+                    <a href="services.html" class="quick-btn">Our Services</a>
+                    <a href="bookings.html" class="quick-btn">Book Now</a>
+                </div> -->
+<!-- Featured Services Section -->
+<section class="services-section">
+    <h2>Featured Services</h2>
+    <div class="services-container">
+  
+      <div class="service-card">
+        <img src="images/makeup.jpg" alt="Makeup Service">
+        <h3>Makeup</h3>
+        <p>Look stunning for any occasion with our professional makeup services, from natural looks to full glam.</p>
+      </div>
+  
+      <div class="service-card">
+        <img src="images/hair-styling.jpg" alt="Hair Styling Service">
+        <h3>Hair Styling</h3>
+        <p>Get the perfect hairstyle for your event, whether it’s a chic updo or beach waves.</p>
+      </div>
+  
+      <div class="service-card">
+        <img src="images/nail-services.jpg" alt="Nail Services">
+        <h3>Nail Services</h3>
+        <p>From simple manicures to intricate nail art, we have the perfect nail service for you.</p>
+      </div>
+  
+    </div>
+  </section>
+  
+  <section id="login-section">
+    <h2>Login</h2>
+    <form id="login-form" action="login.html" method="POST">
+      <!-- form fields here -->
+      <button type="submit" class="login-btn">Login</button>
+
+    </form>
+    <p>Don't have an account? <a href="register.html">Create one here</a></p>
+  </section>
+  
+  
+  
+
+        </main>
+
+        <footer>
+            <br>
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p>
+                <a href="mailto:info@beautyonthego.com">
+                    info@beautyonthego.com
+                </a>
+            </p>
+        </footer>
+    </div><!--end container-->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

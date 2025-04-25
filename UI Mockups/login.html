@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login - Beauty On The Go</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Use the same stylesheet as the register page -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Google Fonts (if used) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Image -->
+  <div class="header-image-container">
+    <img src="images/beauty-salon-services.png" alt="Beauty On The Go Logo" class="header-image">
+  </div>
+
+  <!-- White Box Container (same as register page) -->
+  <div class="register-card">
+    <h2>Login</h2>
+    <form id="login-form" action="process_login.php" method="POST">
+      <div class="form-group">
+        <label for="login-username">Email or Username:</label>
+        <input type="text" id="login-username" name="username" placeholder="Enter your email or username" required>
+      </div>
+      <div class="form-group">
+        <label for="login-password">Password:</label>
+        <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="register-button">Login</button>
+    </form>
+    <p class="account-message">
+      Don't have an account? <a href="register.html">Create one here</a>.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Beauty On The Go</p>
+  </footer>
+
+</body>
+</html>
