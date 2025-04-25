@@ -1,4 +1,4 @@
-# Actual iteration-1 board, (see chapters 3 and 4), add your start and end dates
+![20250425_150958](https://github.com/user-attachments/assets/4a2b9bf2-50bf-49e1-bed3-8e6553cda89e)![20250425_150958](https://github.com/user-attachments/assets/990b4bf6-5218-4823-a67f-0d639e740b0c)# Actual iteration-1 board, (see chapters 3 and 4), add your start and end dates
 
 **Start Date:** Week 2  
 **End Date:** Week 5
@@ -52,5 +52,8 @@
 
 * **Actual Velocity:** ~2.5 days per developer per week
 
-![iteration_1_BurndownChart](20250425_150958.jpg)
+### Burn Down Chart for iteration-1
+![20250425_150958](https://github.com/user-attachments/assets/2f3ae1b4-7d1b-4952-a0fc-be87ce7220af)
+
+
 
