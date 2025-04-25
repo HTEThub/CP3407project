@@ -1,6 +1,9 @@
 User Story 1: Sign up as a customer
+
 Description: As a customer, I want to create an account by providing my personal details and payment information, so I can use the services offered.
+
 Priority: High
+
 Estimation: 2 days
 
 User Story 2: Sign up as an artist
