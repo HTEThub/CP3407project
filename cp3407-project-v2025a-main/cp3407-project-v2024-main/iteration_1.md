@@ -52,5 +52,8 @@
 
 * **Actual Velocity:** ~2.5 days per developer per week
 
-![iteration_1_BurndownChart](20250425_150958.jpg)
+### Burn Down Chart for iteration-1
+![20250425_150958](https://github.com/user-attachments/assets/2f3ae1b4-7d1b-4952-a0fc-be87ce7220af)
+
+
 
