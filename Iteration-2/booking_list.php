@@ -9,16 +9,10 @@ if (!isset($_SESSION['user_id'])) {
 $userId = $_SESSION['user_id'];
 
 // Database config
-$host       = '127.0.0.1'; // Replace with InfinityFree DB host in production
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName     = 'Beauty_Saloon';
-
-// Database configuration with Infinityfree
-// $host       = 'sql105.infinityfree.com';
-// $dbUsername = 'if0_38755242';
-// $dbPassword = 'FUCKpassword77';
-// $dbName     = 'if0_38755242_glamup_sql';
+$host       = 'sql105.infinityfree.com';
+$dbUsername = 'if0_38755242';
+$dbPassword = 'FUCKpassword77';
+$dbName     = 'if0_38755242_glamup_sql';
 
 $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 if ($conn->connect_error) {
@@ -40,17 +34,26 @@ if (!$isArtist) {
 }
 
 // Handle status update (POST)
-if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['booking_id'], $_POST['status'])) {
-    $bookingId = $_POST['booking_id'];
-    $status = $_POST['status']; // accepted, finished, or cancelled
-
-    $update = $conn->prepare("UPDATE bookings SET status = ? WHERE booking_id = ?");
-    $update->bind_param("si", $status, $bookingId);
-    $update->execute();
-    $update->close();
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    if (isset($_POST['booking_id'], $_POST['status'])) {
+        // Update booking status
+        $bookingId = $_POST['booking_id'];
+        $status = $_POST['status'];
+        $update = $conn->prepare("UPDATE bookings SET status = ? WHERE booking_id = ?");
+        $update->bind_param("si", $status, $bookingId);
+        $update->execute();
+        $update->close();
+    } elseif (isset($_POST['delete_booking_id'])) {
+        // Delete booking
+        $deleteId = $_POST['delete_booking_id'];
+        $delete = $conn->prepare("DELETE FROM bookings WHERE booking_id = ?");
+        $delete->bind_param("i", $deleteId);
+        $delete->execute();
+        $delete->close();
+    }
 }
 
-// Get bookings including email
+// Get bookings
 $results = $conn->query("SELECT booking_id, service, appointment_datetime, email, phone, full_address, zip, created_at, status 
                          FROM bookings ORDER BY created_at DESC");
 ?>
@@ -60,10 +63,22 @@ $results = $conn->query("SELECT booking_id, service, appointment_datetime, email
     <meta charset="UTF-8">
     <title>Bookings List - GlamUp Artist</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .delete-button {
+            float: right;
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-        <img src="https://via.placeholder.com/50" alt="Logo">
+        <img src="images/logo.png" alt="GlamUp Logo" style="width:100px; height:100px;">
         <h1>GlamUp - Artist Dashboard</h1>
     </div>
 
@@ -88,7 +103,14 @@ $results = $conn->query("SELECT booking_id, service, appointment_datetime, email
                 <p>No bookings yet.</p>
             <?php else: ?>
                 <?php while ($row = $results->fetch_assoc()): ?>
-                    <div class="booking-card" style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; text-align: left; border-radius: 6px; background-color: #fefefe;">
+                    <div class="booking-card" style="border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; text-align: left; border-radius: 6px; background-color: #fefefe; position: relative;">
+                        
+                        <!-- Delete Button -->
+                        <form method="post" style="position: absolute; top: 10px; right: 10px;">
+                            <input type="hidden" name="delete_booking_id" value="<?= $row['booking_id'] ?>">
+                            <button type="submit" class="delete-button" onclick="return confirm('Are you sure you want to delete this booking?');">X</button>
+                        </form>
+
                         <p><strong>Service:</strong> <?= htmlspecialchars($row['service']) ?></p>
                         <p><strong>Appointment:</strong> <?= htmlspecialchars($row['appointment_datetime']) ?></p>
                         <p><strong>Customer Email:</strong> <?= htmlspecialchars($row['email']) ?></p>
@@ -104,10 +126,14 @@ $results = $conn->query("SELECT booking_id, service, appointment_datetime, email
                             <br><br>
                             <button type="submit">Update Status</button>
                         </form>
+
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>
         </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 GlamUp - All Rights Reserved</p>
     </div>
 </body>
 </html>
