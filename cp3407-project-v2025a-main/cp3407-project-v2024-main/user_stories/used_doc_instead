@@ -1,3 +1,2 @@
-Yea, im not gonna tediously create every single story as an md file.
-
-Im just gonna create a doc with all the stories in it that follows the template
+While the initial plan was to create separate .md files for each user story, 
+we consolidated them into a single [document](UserStories.docx) for efficiency and better manageability.
