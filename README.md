@@ -18,7 +18,7 @@ This project was developed as part of CP3407 at James Cook University.
 
 ## Live Website
 
-Visit GlamUp Website Here: [glamup.infinityfreeapp.com](glamup.infinityfreeapp.com)
+Visit GlamUp Website Here: [glamup.infinityfreeapp.com](https://glamup.infinityfreeapp.com/)
 
 ---
 
